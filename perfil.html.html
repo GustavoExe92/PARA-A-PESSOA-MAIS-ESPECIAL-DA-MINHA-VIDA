@@ -1,0 +1,160 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>minha_princesa 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="perfil">
+
+  <div class="topo">
+    <span class="logo">♡</span>
+    <h1>minha_princesa 💖</h1>
+    <span class="menu">☰</span>
+  </div>
+
+  <div class="perfil-info">
+    <div class="foto-perfil"></div>
+
+    <div class="stats">
+      <div><b>∞</b><br>Momentos</div>
+      <div><b>1</b><br>Amor</div>
+      <div><b>♥</b><br>Pra sempre</div>
+    </div>
+
+    <p class="bio">
+      A garota mais importante da minha vida ✨
+    </p>
+
+    <div class="contador">
+      Juntos há: <b id="dias"></b>
+    </div>
+  </div>
+
+  <div class="stories">
+    <div>Nos 💖</div>
+    <div>Amor da minha vida ✨</div>
+    <div> Nossas Memórias 📸</div>
+    <div>Minha princesa 👑</div>
+  </div>
+<div class="galeria">
+
+<img src="img/foto-capa.jpg.jpeg" onclick="abrir(this.src)">
+<img src="img/foto 2.jpeg" onclick="abrir(this.src)">
+<img src="img/fota 3.jpeg" onclick="abrir(this.src)">
+<img src="img/foto4.jpeg" onclick="abrir(this.src)">
+
+</div>
+
+<div id="popup" onclick="fechar()">
+    <img id="imgGrande">
+</div>
+
+<script>
+
+function abrir(src){
+    document.getElementById("popup").style.display="flex";
+    document.getElementById("imgGrande").src=src;
+}
+
+function fechar(){
+    document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+<script>
+
+const inicio = new Date("2023-09-15");
+
+const hoje = new Date();
+
+const diferenca = hoje - inicio;
+
+const dias = Math.floor(
+diferenca / (1000*60*60*24)
+);
+
+document.getElementById("dias").innerHTML =
+dias + " dias 💖";
+
+</script>
+
+
+
+<script>
+
+function abrir(src){
+    document.getElementById("popup").style.display="flex";
+    document.getElementById("imgGrande").src=src;
+}
+
+function fechar(){
+    document.getElementById("popup").style.display="none";
+}
+
+const inicio = new Date("2023-09-15");
+const hoje = new Date();
+const diferenca = hoje - inicio;
+const dias = Math.floor(
+diferenca / (1000*60*60*24)
+);
+
+document.getElementById("dias").innerHTML =
+dias + " dias 💖";
+
+</script>
+
+<div style="text-align:center; margin:20px;">
+   
+</div>
+
+<div class="musica-container">
+
+    <button class="botao-musica" onclick="document.getElementById('musica').play()">
+        💖 Clique aqui para ouvir nossa música 💖
+    </button>
+
+    <audio id="musica" loop>
+        <source src="music/musica.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<div class="carta">
+    <h2>💌 Para você</h2>
+
+    <p>
+        Meu amor,
+    </p>
+
+    <p>
+        Talvez eu não consiga colocar em palavras tudo o que sinto por você,
+        mas quero que saiba que você é a melhor coisa que já aconteceu na minha vida.
+    </p>
+
+    <p>
+        Cada momento ao seu lado se transforma em uma lembrança especial,
+        cada sorriso seu ilumina meus dias e cada abraço seu faz eu me sentir em casa.
+    </p>
+
+    <p>
+        Obrigado por existir, por me apoiar, por acreditar em mim e por tornar
+        minha vida muito mais feliz.
+    </p>
+
+   <p class="eu-te-amo">
+    ❤️ Eu te amo hoje, amanhã e em todas as versões da minha vida. ❤️
+</p>
+
+    <h3>Com todo meu amor,<br>Gustavo 💖</h3>
+</div>
+
+<a href="motivos.html">
+    <button class="botao-musica">
+        💖 15 DOS MILHARES MOTIVOS Para Te Amar 💖
+    </button>
+</a>
+</body>
+</html>
+</body>
+</html>
